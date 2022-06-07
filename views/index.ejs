@@ -1,0 +1,114 @@
+<%- include("template/cabecera", {tituloweb: 'Inicio'}) %>
+<!--Content-->
+<header class="header-content" id="header">
+<!--Navigation-->
+ <%-include("template/nabvar")%>
+ <!--Content-->
+ <div class="content">
+   <!--Text-->
+   <div class="content_text" id="text_scroll">
+    <h1 class="content_title">¿Quien soy?</h1>
+    <span class="content__introduction typed"><b></b></span>
+      <p>  	
+        Soy creador de paginas web interactivas, profesionales y creativas. Con un buena formación y las herramientas requeridas
+        en el mercado laboral.
+        <br><label><i class="fas fa-phone"></i><b>(+58)04268807085</b></label>
+      </p>
+     </div>
+     <!--Img-->
+      <div class="content_img">
+       <img id="img_fondo" src="/img/fondo.svg">
+      </div>
+  </div>
+</header>
+<div class="container">
+<!--Cards-->
+ <div class="cards-hability" id="hability">
+    <div class="card">
+        <i class="far fa-grin"></i>
+        <h2>Creativo</h2>
+         <p>
+             Me considero una persona con una alta creatividad y con mucha pasion en el mundo del desarrollo web con un largo camino por delante.  
+         </p>
+    </div>
+    <div class="card" id="hability__card">
+     <i class="fas fa-code"></i>
+        <h2>Habilidades</h2>
+         <p>
+            Cuentos con las habilidades mas deseadas y requerida de este mercado.  
+         </p>
+    </div>
+    <div class="card">
+        <i class="fas fa-graduation-cap"></i>
+        <h2>Con ganas de seguir aprendiendo</h2>
+         <p>
+         Algo el cual estoy muy claro es que quiero seguir mejorando y aprendiendo ya que el mundo de la programacion no se detiene y yo tampoco quiero hacerlo.
+        </p>
+    </div>
+  </div>
+  <!--Skill-->
+   <div class="skill" id="skill">
+    <!--Language_text-->	   
+     <section class="skill__text">
+       	<h4>Mis habilidades son: </h4>
+           <p>
+	 	         Mis habilidades son las necesarias para desarrollar sitios web. Mis herramientas son muy conocida. 
+              Como lo es <b>react</b>, tambien el propio <b>JavaScript</b> y <b>Node.js</b>, <i>html</i> y <i>Css</i>. 
+              Estas son mis habilidades la cuales usan las mayorias de sitios web.
+	 	        </p>
+      </section>
+      <div class="language__img" id="skill__img">
+        <img class="language__img__html" src="/img/html.png">
+        <img class="language__img__css" src="/img/css.png">
+        <img class="language__img__js" src="/img/js.png">
+        <img class="language__img__node" src="/img/node.png">
+        <img class="language__img__react" src="/img/react.png">
+       </div>
+   </div>
+   <!--Project-->
+    <div class="project" id="project">
+     <h4>Mis proyectos</h4>
+     <!--cards project-->
+      <div class="project_cards">
+       <!--First project-->
+       <a target="__BLANK" href="https://cristianz2021.github.io/Cards/" class="project_link">
+	  	  <img src="/img/project.svg">
+          <h4><b>Tarjetas de presentacion</b></h4>
+	      	 <p>
+	       	  	Aqui podras ver unas mini tarjetas de mis herramientas de trabajo.
+	    	   </p>
+	  	 </a>
+       <!--More project-->
+        <a href="/project" class="project_link">
+	  	   <img src="/img/project.svg">
+	  		  <h4><b>Proyectos</b></h4>
+	    	   <p>
+             Aqui podras observar los otros proyectos realizados por mi.
+	    	   </p>
+	  	 </a>        
+    </div>
+      </div>
+    <!--Form-->
+    <div class="form_content">
+      <form class="form" action="/send-email" id="form" method="POST"> 
+                <h5>Contactame</h5>
+    <span><i class="far fa-envelope-open email">cristian.zamora2400@gmail.com</i></span>	
+     <div class="form__seccion">
+      <label>Correo electronico</label>
+       <input id="email" type="email" name="email" placeholder="Email">
+      </div>
+       <div class="form__seccion">
+         <label>Nombre</label>
+         <br><input id="name" type="text" name="name" placeholder="Nombre">	
+       </div>
+        <div class="form__seccion">
+         <label>Mensaje</label>
+        <textarea id="message" name="message" rows="5" placeholder="Enviar mensaje"></textarea>
+        </div>
+         <button type="submit" id="form__button">Enviar</button>
+    </form>  
+    </div>
+</div>
+<!--Footer-->
+<%- include("template/footer")%>
+</html>

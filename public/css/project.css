@@ -1,0 +1,43 @@
+.container__project{
+    margin: auto;
+	width: 100%;
+	text-align: center;
+}
+.main_primary{
+    width: 100%;
+    background: #0072E5;
+    padding: 20px 0; 
+}
+
+.main_primary a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+/*Project*/
+.content__project{
+    margin: 50px 0;
+}
+.content__project a{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50%;
+    text-decoration: none;
+    color: #6F7E8C;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.25);
+    padding: 30px 0;
+}
+
+.content__project a img{
+    width: 50%;
+}
+
+.content__project a h4{
+    font-size: 21px;
+}
+
+.content__project a p{
+    grid-column: 1/-1;
+    font-size: 20px;
+}
