@@ -370,31 +370,6 @@ body{
       margin: 0px 0;
       width: 60%;
     }
-    /********************Cards********************/
-    .cards-hability{
-        display: block;
-        margin: auto;
-        width: 80%;
-        padding: 50px 0;
-    }
-    
-    .card{
-        border-radius: 0px;
-        width: 50%;
-        margin: auto;
-        padding-top: 50px;
-    }
-
-    #hability__card{
-        transform: scale(1);
-        background:#E6E6E6;
-        color: #4F4F4F;
-    }
-    
-    #hability__card i{
-        color: #0072E5;
-    }
-
     /********************Skill********************/
     .skill{
         height: 30vh;
@@ -432,9 +407,34 @@ body{
     .content_img #img_fondo{
         display: none;
     }
-    /********************Content********************/
+     /********************Cards********************/
+     .cards-hability{
+        display: block;
+        margin: auto;
+        width: 80%;
+        padding: 50px 0;
+    }
+    
+    .card{
+        border-radius: 0px;
+        width: 50%;
+        margin: auto;
+        padding-top: 50px;
+        opacity: 1;
+    }
+
+    #hability__card{
+        transform: scale(1);
+        background:#E6E6E6;
+        color: #4F4F4F;
+    }
+    
+    #hability__card i{
+        color: #0072E5;
+    }
+    /********************Skill********************/
     .skill{
-        height: 40vh;
+        height: 45vh;
     }
     /********************Project********************/
     .project .project_cards{
@@ -462,11 +462,6 @@ body{
     }
 }  
 @media (max-width: 380px){
-/********************Cards********************/
-    .card{
-    opacity: 1;
-    }    
-    
     /********************Skill********************/
     .skill{
         height: 40vh;
